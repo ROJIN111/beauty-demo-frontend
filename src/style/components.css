@@ -1,0 +1,99 @@
+/* 组件层：页面内可复用的小块样式，和 Element Plus 的轻量覆盖。 */
+.eyebrow {
+  margin: 0 0 6px;
+  color: #d34d6c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e8edf2;
+}
+
+.panel-head span {
+  color: #7b8a98;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.platforms .el-checkbox-button__inner {
+  border-radius: 6px !important;
+  border-left: 1px solid var(--el-border-color) !important;
+}
+
+.result-tabs {
+  min-height: 460px;
+}
+
+.result-card {
+  padding: 20px;
+  border: 1px solid #e6ebf0;
+  border-radius: 8px;
+  background: #fbfcfd;
+}
+
+.result-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.result-meta {
+  margin-bottom: 8px;
+  color: #7b8a98;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.bullet-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 22px;
+  color: #334253;
+  line-height: 1.7;
+}
+
+/* 敏感词高亮：和 App.vue 中的禁用词扫描结果对应。 */
+mark {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #b4233f;
+  background: #ffe8ee;
+  font-weight: 700;
+}
+
+.el-button {
+  border-radius: 6px;
+}
+
+.el-tag {
+  border-radius: 999px;
+}

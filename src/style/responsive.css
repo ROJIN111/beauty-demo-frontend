@@ -1,0 +1,31 @@
+/* 响应式层：桌面优先，小屏时改成上下布局，便于截图和查看。 */
+@media (max-width: 920px) {
+  .workspace {
+    width: min(100% - 24px, 720px);
+    padding-top: 16px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .result-panel {
+    min-height: 420px;
+  }
+
+  .actions {
+    justify-content: stretch;
+  }
+
+  .actions .el-button {
+    flex: 1;
+  }
+}

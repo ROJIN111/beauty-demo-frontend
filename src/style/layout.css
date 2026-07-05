@@ -1,0 +1,51 @@
+/* 布局层：控制页面大结构，不写具体业务组件细节。 */
+.workspace {
+  width: min(1180px, calc(100% - 40px));
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 4px 24px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 380px minmax(0, 1fr);
+  gap: 18px;
+}
+
+.panel {
+  min-width: 0;
+  border: 1px solid #dce3ea;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 12px 34px rgba(38, 50, 63, 0.08);
+}
+
+.form-panel,
+.result-panel {
+  padding: 22px;
+}
+
+.result-panel {
+  min-height: 586px;
+}
+
+/* 底部操作栏保持吸底，演示时生成/重置按钮始终容易找到。 */
+.actions {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 16px 0;
+  background: rgba(238, 242, 245, 0.92);
+  backdrop-filter: blur(10px);
+}
